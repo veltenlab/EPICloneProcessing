@@ -1,0 +1,95 @@
+__resources__:
+  cpu:
+    - "cpu"
+
+__default__:
+  error: log/stderr.txt
+  output: log/stdout.txt
+  queue: short-sl7
+  pe: smp 1
+  walltime: 02:00:00
+  virtual_memory: 40
+
+barcodecode:
+  error: log/barcodecode_err.txt
+  output: log/barcodecode_out.txt
+  queue: short-sl7
+  walltime: 05:55:00
+  virtual_memory: 20000
+  pe: smp 4
+  h_fsize: 100000
+
+generate_reference:
+  error: log/generate_reference_err.txt
+  output: log/generate_reference_out.txt
+  queue: short-sl7
+  walltime: 00:30:00
+  virtual_memory: 20000
+  h_fsize: 100000
+
+alignment:
+  error: log/alignment_err.txt
+  output: log/alignment_out.txt
+  queue: long-sl7
+  walltime: 24:00:00
+  virtual_memory: 60000
+  pe: smp 6
+  h_fsize: 1000000
+
+picard:
+  error: log/picard_err.txt
+  output: log/picard_out.txt
+  queue: long-sl7
+  walltime: 12:00:00
+  virtual_memory: 20000
+  h_fsize: 5000000    
+
+distribution:
+  error: log/distribution_err.txt
+  output: log/distribution_out.txt
+  queue: short-sl7
+  walltime: 05:55:00
+  pe: smp 6
+  virtual_memory: 40000
+  h_fsize: 1000000
+
+cellfinder:
+  error: log/cellfinder_err.txt
+  output: log/cellfinder_out.txt
+  queue: short-sl7
+  walltime: 02:00:00
+  virtual_memory: 50000
+  h_fsize: 1000000
+
+reads_per_cell:
+  error: log/reads_per_cell_err.txt
+  output: log/reads_per_cell_out.txt
+  queue: short-sl7
+  walltime: 02:00:00
+  virtual_memory: 50000
+  h_fsize: 1000000
+
+doubletdetection:
+  error: log/doubletdetection_err.txt
+  output: log/doubletdetection_out.txt
+  queue: short-sl7
+  walltime: 05:55:00
+  virtual_memory: 20000
+  h_fsize: 1000000
+
+extract_barcode:
+  error: log/extract_barcode_err.txt
+  output: log/extract_barcode_out.txt
+  queue: short-sl7
+  walltime: 05:55:00
+  virtual_memory: 20000
+  h_fsize: 1000000
+
+clonal_annotation:
+  error: log/clonal_annotation_err.txt
+  output: log/clonal_annotation_out.txt
+  queue: short-sl7
+  walltime: 05:55:00
+  virtual_memory: 20000
+  h_fsize: 1000000
+

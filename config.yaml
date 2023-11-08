@@ -1,0 +1,19 @@
+names: ['Lung', 'MyeLym']
+samples:
+ Lung: ''
+ MyeLym: 'MBDN12_lib_05526AAE_ACTCTCGA-CTGTACCA'
+barcode_extension:
+ Lung: 'lung'
+ MyeLym: 'myelym'
+ LARRY_mouse3: 'larry3'
+ LARRY_mouse4: 'larry4'
+path: '/users/lvelten/sequencing_data/Chelsea_Szu-Tu/2023-05-04_AHKF32DMXY/VELTENLAR_64/'
+ref_genome: '/users/lvelten/project/Methylome/references/MissionBio/mm10/ucsc_mm10.fa'
+panel_bed: '/users/lvelten/project/Methylome/infos/HSCs/CO475.amplicons_woLARRY.bed'
+ampli_file: '/users/lvelten/project/Methylome/infos/HSCs/panel_info_dropout.tsv'
+cellfinder_cutoff: 0.7
+read_length: 100
+larry_version: v2
+nreads_larry: 5
+hamming_larry: 3
+batch: 'november'

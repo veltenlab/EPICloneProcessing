@@ -1,0 +1,7 @@
+name: rnbeads
+channels:
+  - conda-forge
+  - bioconda
+  - defaults
+dependencies:
+  - bioconductor-rnbeads=2.12.2=r41hdfd78af_0
