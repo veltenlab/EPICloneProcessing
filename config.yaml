@@ -1,19 +1,25 @@
+# The sample names that you want to give them
 names: ['Lung', 'MyeLym']
+# The name of the samples coming from the sequencer. The pipeline expects that there are two files for each sample ending with _R1_001.fastq.gz and _R2_001.fastq.gz 
 samples:
  Lung: ''
  MyeLym: 'MBDN12_lib_05526AAE_ACTCTCGA-CTGTACCA'
+# The cellular barcodes get this added to make them unique across samples
 barcode_extension:
  Lung: 'lung'
  MyeLym: 'myelym'
- LARRY_mouse3: 'larry3'
- LARRY_mouse4: 'larry4'
+# The path to the raw sequening data
 path: '/users/lvelten/sequencing_data/Chelsea_Szu-Tu/2023-05-04_AHKF32DMXY/VELTENLAR_64/'
 ref_genome: '/users/lvelten/project/Methylome/references/MissionBio/mm10/ucsc_mm10.fa'
+# The path to the panel file in BED format
 panel_bed: '/users/lvelten/project/Methylome/infos/HSCs/CO475.amplicons_woLARRY.bed'
+# The path to the panel file in tsv format. There need to be one column called DropoutUncutLKs containing 1-the dropout
 ampli_file: '/users/lvelten/project/Methylome/infos/HSCs/panel_info_dropout.tsv'
+# The number of control amplicons required to achieve a sufficient performance (the higher the more stringent)
 cellfinder_cutoff: 0.7
 read_length: 100
 larry_version: v2
+# Cutoffs for filtering and merging LARRY barcodes
 nreads_larry: 5
 hamming_larry: 3
 batch: 'november'
